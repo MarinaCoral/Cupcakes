@@ -1,0 +1,194 @@
+import { Text, View, StyleSheet, Image, ScrollView } from 'react-native';
+
+export default function App() {
+  return (
+    
+    <View style={styles.container}>
+
+      <Text style={styles.paragraph}>
+        CUPCAKES
+      </Text>
+      <Text></Text>
+
+      <ScrollView>
+
+        <View style={styles.fotos1}>
+           <Text></Text>
+          <Text style={styles.nome}>Chocolate</Text>
+            <Text></Text>
+          <Image style={styles.img} resizeMode = "center" source={require("./assets/cupcakesChocolate.jpg")} />
+            <Text></Text>
+          <Text style={styles.descricao}>Ingredientes: farinha de trigo, chocolate em pó, leite, ovos, fermento
+           em pó.</Text>
+            <Text></Text>
+          <Text style={styles.preco}>Preço: R$5,00</Text>
+            <Text></Text>
+        </View>
+
+        <View style={styles.fotos2}>
+            <Text></Text>
+          <Text style={styles.nome}>Baunilha</Text>
+            <Text></Text>
+          <Image style={styles.img} resizeMode = "center" source={require("./assets/cupcakesBaunilha.jpg")} />
+            <Text></Text>
+          <Text style={styles.descricao}>Ingredientes: farinha de trigo, leite, ovos, essência de baunilha, fermento em pó.</Text>
+            <Text></Text>
+          <Text style={styles.preco}>Preço: R$5,00</Text>
+            <Text></Text>
+        </View>
+
+        <View style={styles.fotos3}>
+            <Text></Text>
+          <Text style={styles.nome}>Laranja</Text>
+            <Text></Text>
+          <Image style={styles.img} resizeMode = "center" source={require("./assets/cupcakesLaranja.jpg")} />
+            <Text></Text>
+          <Text style={styles.descricao}>Ingredientes: farinha de trigo, leite, ovos, suco e raspas de laranja, fermento em pó.</Text>
+            <Text></Text>
+          <Text style={styles.preco}>Preço: R$5,00</Text>
+            <Text></Text>
+        </View>
+
+        <View style={styles.fotos4}>
+            <Text></Text>
+          <Text style={styles.nome}>Limão</Text>
+            <Text></Text>
+          <Image style={styles.img} resizeMode = "center" source={require("./assets/cupcakesLimao.jpg")} />
+            <Text></Text>
+          <Text style={styles.descricao}>Ingredientes: farinha de trigo, leite, ovos, suco e raspas de limão, fermento em pó.</Text>
+            <Text></Text>
+          <Text style={styles.preco}>Preço: R$5,00</Text>
+            <Text></Text>
+        </View>
+
+        <View style={styles.fotos5}>
+            <Text></Text>
+          <Text style={styles.nome}>Morango</Text>
+            <Text></Text>
+          <Image style={styles.img} resizeMode = "center" source={require("./assets/cupcakesMorango.jpg")} />
+            <Text></Text>
+          <Text style={styles.descricao}>Ingredientes: farinha de trigo, leite, ovos, morangos frescos, fermento em pó.</Text>
+            <Text></Text>
+          <Text style={styles.preco}>Preço: R$8,00</Text>
+            <Text></Text>
+        </View>
+        
+        <View style={styles.fotos6}>
+            <Text></Text>
+          <Text style={styles.nome}>Cereja</Text>
+            <Text></Text>
+          <Image style={styles.img} resizeMode = "center" source={require("./assets/cupcakesCereja.jpg")} />
+            <Text></Text>
+          <Text style={styles.descricao}>Ingredientes: farinha de trigo, leite, ovos, fermento em pó, cerejas em calda.</Text>
+            <Text></Text>
+          <Text style={styles.preco}>Preço: R$8,00</Text>
+            <Text></Text>
+        </View>
+
+      </ScrollView>
+
+    </View>
+
+  );
+}
+
+const styles = StyleSheet.create({
+
+  container: {
+    flex: 1,
+    backgroundColor: '#EED9F4'
+  },
+
+  paragraph: {
+    marginTop: 40,
+    fontSize: 25,
+    fontWeight: 'bold',
+    textAlign: 'center',
+    color: '#8E0884'
+  },
+
+  img: {
+    width: 320,
+    height: 250,
+    borderRadius: 10,
+    padding: 10
+  },
+
+  nome: {
+    fontSize: 25,
+    fontWeight: 'bold',
+    justifyContent: 'center'
+  },
+
+  descricao: {
+    fontSize: 20,
+    fontStyle: 'italic'
+  },
+
+  preco: {
+    fontSize: 20,
+    fontWeight: 'bold',
+    justifyContent: 'center'
+  },
+
+  fotos1: {
+    flex: 1,
+    backgroundColor: "#7C5558",
+    margin: 12,
+    justifyContent: 'center',
+    padding: 10,
+    alignItems: "center",
+    borderRadius: 15
+  },
+
+  fotos2: {
+    flex: 1,
+    backgroundColor: "#F2EE71",
+    margin: 12,
+    justifyContent: 'center',
+    padding: 10,
+    alignItems: "center",
+    borderRadius: 15
+  },
+
+  fotos3: {
+    flex: 1,
+    backgroundColor: "#F2BA71",
+    margin: 12,
+    justifyContent: 'center',
+    padding: 10,
+    alignItems: "center",
+    borderRadius: 15
+  },
+
+  fotos4: {
+    flex: 1,
+    backgroundColor: "#B8EDA7",
+    margin: 12,
+    justifyContent: 'center',
+    padding: 10,
+    alignItems: "center",
+    borderRadius: 15
+  },
+
+  fotos5: {
+    flex: 1,
+    backgroundColor: "#E77C7C",
+    margin: 12,
+    justifyContent: 'center',
+    padding: 10,
+    alignItems: "center",
+    borderRadius: 15
+  },
+
+  fotos6: {
+    flex: 1,
+    backgroundColor: "#E77CD6",
+    margin: 12,
+    justifyContent: 'center',
+    padding: 10,
+    alignItems: "center",
+    borderRadius: 15
+  },
+
+});
